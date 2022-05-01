@@ -26,9 +26,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Packages 
 PRODUCT_PACKAGES += \
-   PixelThemesStub \
-   ThemedIconsOverlay \
-   PixelRecentsProvider \
+   PixelThemesStubMod \
+   ThemedIconsOverlayMod \
+   PixelRecentsProviderMod \
    NexusLauncherReleaseMod \
-   QuickAccessWallet \
-   WallpaperPickerGoogleRelease
+   QuickAccessWalletMod \
+   WallpaperPickerGoogleReleaseMod
