@@ -26,6 +26,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Packages 
 PRODUCT_PACKAGES += \
+   Remover \
    PixelThemesStubMod \
    ThemedIconsOverlayMod \
    PixelRecentsProviderMod \
