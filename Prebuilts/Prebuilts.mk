@@ -25,6 +25,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Packages 
 PRODUCT_PACKAGES += \
+   IconsOverlayRemover \
    NexusLauncherReleaseMod \
    PixelLauncherMods \
    PixelLauncherModsOverlay \
