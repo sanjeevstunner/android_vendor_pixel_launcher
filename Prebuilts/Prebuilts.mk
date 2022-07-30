@@ -22,13 +22,12 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/pixel/launcher/Preb
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.boot.vendor.overlay.static=false
 
-# Packages 
+# Build apps
 PRODUCT_PACKAGES += \
-   IconsOverlayRemover \
    NexusLauncherReleaseMod \
-   PixelRecentsProviderMod \
+   PixelRecentsProvider \
    PixelThemesStubMod \
    QuickAccessWalletMod \
    Remover \
-   ThemedIconsOverlayMod \
+   ThemedIconsOverlay \
    WallpaperPickerGoogleReleaseMod
