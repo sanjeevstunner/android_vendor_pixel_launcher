@@ -19,30 +19,20 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := ThemedIconsOverlay
 LOCAL_MODULE_TAGS := optional
-ifdef THEMED_ICONS_ACONS
+ifeq ($(ICON_VARIANT), acons)
 LOCAL_SRC_FILES := ThemedIconsOverlayACons.apk
-else
-ifdef THEMED_ICONS_CAYICONS
+else ifeq ($(ICON_VARIANT), cayicons)
 LOCAL_SRC_FILES := ThemedIconsOverlayCayicons.apk
-else
-ifdef THEMED_ICONS_DG_ICONS
+else ifeq ($(ICON_VARIANT), dgicons)
 LOCAL_SRC_FILES := ThemedIconsOverlayDGIcons.apk
-else
-ifdef THEMED_ICONS_LAWNICONS
+else ifeq ($(ICON_VARIANT), lawnicons)
 LOCAL_SRC_FILES := ThemedIconsOverlayLawnicons.apk
-else
-ifdef THEMED_ICONS_RK_ICONS
+else ifeq ($(ICON_VARIANT), rkicons)
 LOCAL_SRC_FILES := ThemedIconsOverlayRKIcons.apk
-else
-ifdef THEMED_ICONS_TEAMFILES_ICONS
+else ifeq ($(ICON_VARIANT), teamfilesicons)
 LOCAL_SRC_FILES := ThemedIconsOverlayTeamFilesIcons.apk
 else
-$(You need set variant for icons variant in your device tree, check REAMDE.md)
-endif
-endif
-endif
-endif
-endif
+$(You need set variant of icons in your device tree, check REAMDE for instructions)
 endif
 LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_CLASS := APPS

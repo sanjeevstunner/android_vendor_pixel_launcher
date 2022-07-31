@@ -19,22 +19,16 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := NexusLauncherReleaseMod
 LOCAL_MODULE_TAGS := optional
-ifdef NEXUSLAUNCHER_AMMIT
+ifeq ($(LAUNCHER_VARIANT), ammit)
 LOCAL_SRC_FILES := Ammit.apk
-else
-ifdef NEXUSLAUNCHER_HORUS
+else ifeq ($(LAUNCHER_VARIANT), horus)
 LOCAL_SRC_FILES := Horus.apk
-else
-ifdef NEXUSLAUNCHER_KHONSU
+else ifeq ($(LAUNCHER_VARIANT), khonsu)
 LOCAL_SRC_FILES := Khonsu.apk
-else
-ifdef NEXUSLAUNCHER_TAWARET
+else ifeq ($(LAUNCHER_VARIANT), tawaret)
 LOCAL_SRC_FILES := Tawaret.apk
 else
-$(You need set variant of PixelLauncher in your device tree, check REAMDE.md)
-endif
-endif
-endif
+$(You need set variant of PixelLauncher in your device tree, check REAMDE for instructions)
 endif
 LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_CLASS := APPS
