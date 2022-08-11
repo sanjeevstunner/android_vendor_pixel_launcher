@@ -16,6 +16,7 @@
 
 Available LAUNCHER_VARIANTs ``ammit`` ``horus`` ``khonsu`` ``tawaret`` ``osiris`` <br/>
 Available ICON_VARIANTs ``acons`` `` cayicons`` ``dgicons`` ``lawnicons`` ``rkicons`` ``teamfilesicons`` 
+Set AOSP_ENHANCER := true (Only if you want that)
 
 **Check [documentation](https://docs.google.com/document/d/1WnhtIrFRy36Phf2onJMJ-iWgYifnwcVDUUewJiP85AY/edit?usp=drivesdk) for detailed info on each variant.**<br/>
 
