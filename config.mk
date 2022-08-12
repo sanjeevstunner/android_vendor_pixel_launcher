@@ -22,3 +22,6 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 include vendor/pixel/launcher/Prebuilts/Prebuilts.mk
 
 RELAX_USES_LIBRARY_CHECK := true
+
+LAUNCHER_VARIANT ?= khonsu
+ICON_VARIANT ?= ThemedIconsOverlayTeamFilesIcons
