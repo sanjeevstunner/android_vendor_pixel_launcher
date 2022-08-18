@@ -27,6 +27,8 @@ else ifeq ($(LAUNCHER_VARIANT), khonsu)
 LOCAL_SRC_FILES := Khonsu.apk
 else ifeq ($(LAUNCHER_VARIANT), tawaret)
 LOCAL_SRC_FILES := Tawaret.apk
+else ifeq ($(LAUNCHER_VARIANT), osiris)
+LOCAL_SRC_FILES := Osiris.apk
 else
 $(You need set variant of PixelLauncher in your device tree, check REAMDE for instructions)
 endif
